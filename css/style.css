@@ -8,34 +8,22 @@
 }
 
 body {
-  background-color: var(--BG-gray);
+  background-color: #f2f2f2;
   font-family: 'Raleway', sans-serif;
 }
 
 .inner {
-  /* width: var(--content-width-PC); */
   margin: 0 auto;
 }
 
 /* SP Style----------------------------------------------------------- */
-@media screen and (max-width: 767px) {
-  .contact_button_box {
+@media screen and (max-width: 1199px){
+  .contact_button {
     display: none;
   }
 
-  .header-content {
-    margin: 0 15px auto;
-    margin-bottom: 0px;
-  }
-}
-
-@media screen and (max-width: 1199px) and (min-width:768px) {
-  .contact_button_box {
-    display: none;
-  }
-  .header-content {
-    margin: 0 15px auto;
-    margin-bottom: 0px;
+  .inner {
+    width: 97%;
   }
 }
 
@@ -45,7 +33,7 @@ body {
   }
 
   .inner {
-    width: var(--content-width-PC);
+    width: 1100px;
   }
 }
 
@@ -75,11 +63,11 @@ header {
 }
 
 .isthemecolor {
-  color: var(--theme-color);
+  color: #74cfae;
 }
 
-.green_button {
-  background-color: var(--theme-color);
+.contact_button {
+  background-color: #74cfae;
   border-radius: 3px;
   transition: all 0.3s;
   padding: 14px 12px;
@@ -93,14 +81,15 @@ header {
   transition: all 0.3s;
 }
 
-.humbuger_button_box {
+.humbuger_button {
   border-radius: 4px;
   padding: 5px 10px;
   border: 1px solid #ddd
+  /* cursor: pointer; */
 }
 
-.green_button:hover .button_message{
-  color: var(--default-text-color);
+.contact_button:hover .button_message{
+  color: #333;
 }
 
 /* theme---------------------------------------------------- */
@@ -119,7 +108,7 @@ header {
 .theme_text {
   font-size: 90px;
   font-weight: 700;
-  color: var(--theme-color);
+  color: #74cfae;
   margin-bottom: 20px;
 }
 
@@ -131,7 +120,7 @@ header {
 /* section---------------------------------------------------------- */
 
 .themecolor_BG {
-  background-color: var(--theme-color);
+  background-color: #74cfae;
 }
 
 .section_inner {
@@ -223,7 +212,7 @@ header {
 }
 
 .email_button {
-  background-color: var(--theme-color);
+  background-color: #74cfae;
   border-radius: 3px;
   transition: all 0.3s;
   padding: 14px 20px;
@@ -242,7 +231,7 @@ header {
 }
 
 .email_button:hover .email_button_message{
-  color: var(--default-text-color);
+  color: #333;
 }
 
 @media screen and (min-width: 1200px) {
@@ -280,7 +269,7 @@ header {
 /* OUR SKILLS---------------------------------------------- */
 
 .darkgray_BG {
-  background-color: var(--BG-darkgray);
+  background-color: #4e4e4e;
 }
 
 .ourskills_inner {
