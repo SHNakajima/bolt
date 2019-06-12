@@ -57,6 +57,7 @@ header {
   top: 0px;
   left:0px;
   right: 0px;
+  z-index: 100;
 }
 
 .header-inner {
@@ -67,7 +68,6 @@ header {
 
 .header_icon {
   padding: 15px;
-  opacity: 50%;
 }
 
 .isgray {
@@ -82,11 +82,12 @@ header {
   background-color: var(--theme-color);
   border-radius: 3px;
   transition: all 0.3s;
+  padding: 14px 12px;
+  cursor: pointer;
 }
 
 .button_message {
   font-size: 12px;
-  padding: 14px 12px;
   text-decoration: none;
   color: #fff;
   transition: all 0.3s;
@@ -98,15 +99,15 @@ header {
   border: 1px solid #ddd
 }
 
-a.green_button.button_message:hover{
+.green_button:hover .button_message{
   color: var(--default-text-color);
 }
 
 /* theme---------------------------------------------------- */
 
 .theme {
-  margin-top: 250px;
-  margin-bottom: 250px;
+  padding-top: 250px;
+  padding-bottom: 250px;
   text-align: center;
 }
 
@@ -148,7 +149,7 @@ a.green_button.button_message:hover{
 .section_text {
   font-size: 20px;
   line-height: 30px;
-  word-break: break-all;
+  word-break: keep-all;
   color: #fff;
 }
 
@@ -177,10 +178,14 @@ a.green_button.button_message:hover{
 
 /* article----------------------------------------------------------- */
 
-.article_title {
+.article_inner {
   padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.article_title {
   font-size: 24px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -199,6 +204,7 @@ a.green_button.button_message:hover{
   height: 300px;
   opacity: 0.7;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .work_img:hover {
@@ -207,7 +213,6 @@ a.green_button.button_message:hover{
 
 .work_description {
   margin-top: 90px;
-  margin-bottom: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,6 +223,11 @@ a.green_button.button_message:hover{
 }
 
 .email_button {
+  background-color: var(--theme-color);
+  border-radius: 3px;
+  transition: all 0.3s;
+  padding: 14px 20px;
+  cursor: pointer;
 }
 
 .work_text_box + .email_button {
@@ -226,13 +236,12 @@ a.green_button.button_message:hover{
 
 .email_button_message {
   font-size: 12px;
-  padding: 14px 20px;
   text-decoration: none;
   color: #fff;
   transition: all 0.3s;
 }
 
-a.green_button.email_button_message:hover {
+.email_button:hover .email_button_message{
   color: var(--default-text-color);
 }
 
@@ -288,12 +297,10 @@ a.green_button.email_button_message:hover {
 .skills_container {
   display: flex;
   align-items: center;
-  padding-top: 50px;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
-.skill + .skill {
-  padding-left: 180px;
-}
 
 .skill {
   color: #fff;
